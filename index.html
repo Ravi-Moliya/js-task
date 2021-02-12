@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Task</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="register-form" id="register-form">
+        <form name="myForm" class="myForm" id='myForm' action="" method="POST">
+            <h2>Registration Form</h2><hr>
+            <div class="form-group">
+                <label for="name">Name :</label><br>
+                <input type="text" placeholder="Enter Name" class="form-control" name="name" id="name" maxlength="15" required>
+                <small class="validationMsg">(max 15 charachters a-z and A-Z)</small>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label><br>
+                <input type="email" placeholder="Enter Email id" class="form-control" name="email" id="email" required>
+                <small class="validationMsg"></small>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile :</label><br>
+                <input type="number" placeholder="Enter Contact No." class="form-control" name="mobile" id="mobile" maxlength="10" required>
+                <small class="validationMsg">(10 Digit number)</small>
+            </div>
+            <div class="form-group">
+                <label>Gender :</label><br>
+                <input type="radio" class="form-control" name="gender" id="male" class="gender" checked><label for="male">Male</label>&nbsp;&nbsp;
+                <input type="radio" class="form-control" name="gender" id="female" class="gender"><label for="female">Female</label>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth :</label><br>
+                <input type="date" class="form-control" name="dob" id="dob" required>
+                <small class="validationMsg">(* Date of Birth required)</small>
+            </div>
+            <div class="form-group">
+                <label for="pass">Password :</label><br>
+                <input type="password" placeholder="Enter Password" class="form-control" name="pass" id="password" maxlength="15" required>
+                <small class="validationMsg">(max 15 charachters a-z and A-Z and 0-9)</small>
+            </div>
+            <input class="btn btn-white mt-2" type="submit" value="REGISTER">
+            <div class="login-link">
+                <span>Already have an account ?</span>
+                <a class="login-btn" id="login-link" href="#login-form">Login</a>
+            </div>
+        </form>
+    </div>
+
+    <div class="login-form" id="login-form">
+        <form name="myLoginForm" class="myLoginForm" >
+            <h2>Login Form </h2><hr>
+            <div class="form-group">
+                <label for="login-email">Email or Contact No.:</label><br>
+                <input type="text" placeholder="Enter Email or contact No." class="form-control" name="email" id="login-email">
+            </div>
+            <div class="form-group">
+                <label for="login-pass">Password :</label><br>
+                <input type="password" placeholder="Enter Password" class="form-control" name="pass" id="login-password">
+            </div>
+            <input class="btn btn-white mt-2" type="submit" value="Login">
+            <div class="login-link">
+                <span>Don't have an account ?</span>
+                <a id="register-link" class="login-btn" href="#register-form">Register</a>
+            </div>
+        </form> 
+    </div>
+
+    <script src="./js/auth.js"></script>
+</body>
+</html>

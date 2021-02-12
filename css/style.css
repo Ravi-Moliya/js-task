@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+.myForm, .myLoginForm {
+    background-color: #ebebeb;
+    padding: 20px;
+    margin-top: 10px;
+}
+.myForm h2, .myLoginForm h2{
+    padding: 15px 5px;
+}
+.register-form, .login-form {
+    display: flex;
+    justify-content: center;
+}
+.login-form {
+    display: none;
+}
+.form-group {
+    margin: 5px 2px;
+    padding: 10px 5px;
+}
+label {
+    font-weight: bold;
+    font-size: 17px;
+    margin: 3px;
+}
+input, button {
+    padding: 5px;
+    margin: 3px;
+    width: 100%;
+    height: 30px; 
+}
+input[type='radio'] { 
+    width: 20px;
+    height: 15px;    
+}
+input[type='submit'] {
+    color: #f9f9f9;
+    background-color: #363636;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+input[type='submit']:hover, button:hover {
+    cursor: pointer;
+    color: #363636;
+    background-color: #f9f9f9;
+}
+.login-link {
+    margin-top: 10px;
+}
+div.login-btn span{
+    font-size: 20px;
+}
+a {
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Tabs Style */
+.topnav {
+    overflow: hidden;
+    background-color: #363636;
+}
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: #363636;
+}
+.topnav a.active {
+    background-color: #cc9797;
+    color: white;
+}
+
+/* Profile & Dashboard style */
+.profile-section, .dashboard-section {
+    display: flex;
+    justify-content: center;
+}
+.profile-card, .dashboard-card {
+    background-color: gainsboro;
+    padding: 50px 100px;
+    margin: 1%;
+    /* width: 30%; */
+}
+.profile-card h2, .dashboard-card h2{
+    padding: 15px;
+}
+.profile {
+    margin-top: 20px;
+}
+.profile .form-group {
+    margin: 20px 0px;
+}
+
+.task-panel {
+    margin: 20px 0px;
+}
+#task-body {
+    margin-top: 15px;
+}
+ul li {
+    cursor: pointer;
+    /* position: relative; */
+    /* padding: 12px 8px 12px 40px; */
+    padding: 10px;
+    list-style-type: none;
+    background: #eee;
+    font-size: 15px;
+    /* transition: 0.2s; */
+}
+ul li:hover {
+    background: #f9f9f9;
+}
+
+/* Weather style */
+.weather,.gify {
+    display: flex;
+    justify-content: center;   
+}
+.weather-information,.gify-image {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-top: 50px;
+}

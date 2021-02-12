@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="./profile.html">Profile</a>
+        <a class="active" href="./dashboard.html">Dashboard</a>
+        <a href="./weather.html">Weather</a>
+        <a href="./gify.html">Gify</a>
+        <a href="#" id="logout" style="float: right;">Logout</a>
+        <a href="#" id="time" style="float: right;"></a>
+    </div>
+    <div class="dashboard-section">
+        <div class="dashboard-card">
+            <h2>Dashboard View</h2><hr>
+            <div class="dashboard">
+                <div class="task-panel">
+                    <input type="text" id="task" placeholder="Type Task Here..." />
+                    <input type="button" id="add_task" value="Add Task" />
+                </div><hr>
+                <ul id="task-body"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/dashboard.js"></script>
+</body>
+</html>
